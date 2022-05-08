@@ -11,6 +11,12 @@
 		1A4A8F712827F97D006B1AE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F702827F97D006B1AE3 /* ContentView.swift */; };
 		1A4A8F732827F97E006B1AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A8F722827F97E006B1AE3 /* Assets.xcassets */; };
 		1A4A8F762827F97E006B1AE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A8F752827F97E006B1AE3 /* Preview Assets.xcassets */; };
+		1A4A8F802827FA5E006B1AE3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A8F7F2827FA5E006B1AE3 /* CloudKit.framework */; };
+		1A4A8F832827FCAE006B1AE3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F822827FCAE006B1AE3 /* Model.swift */; };
+		1A4A8F89282804C3006B1AE3 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F87282804C3006B1AE3 /* Model.xcdatamodeld */; };
+		1A752261282806C10084139F /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752260282806C10084139F /* TeamsView.swift */; };
+		1A752263282806D90084139F /* AddSportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752262282806D90084139F /* AddSportView.swift */; };
+		1A7522652828098A0084139F /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7522642828098A0084139F /* AddTeamView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,15 @@
 		1A4A8F702827F97D006B1AE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A4A8F722827F97E006B1AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4A8F752827F97E006B1AE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A4A8F7C2827F9AC006B1AE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A4A8F7D2827FA47006B1AE3 /* swiftui-cloudkit-core-data.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swiftui-cloudkit-core-data.entitlements"; sourceTree = "<group>"; };
+		1A4A8F7F2827FA5E006B1AE3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1A4A8F812827FB16006B1AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A4A8F822827FCAE006B1AE3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1A4A8F88282804C3006B1AE3 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1A752260282806C10084139F /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		1A752262282806D90084139F /* AddSportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSportView.swift; sourceTree = "<group>"; };
+		1A7522642828098A0084139F /* AddTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4A8F802827FA5E006B1AE3 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +51,10 @@
 		1A4A8F622827F97D006B1AE3 = {
 			isa = PBXGroup;
 			children = (
+				1A4A8F7C2827F9AC006B1AE3 /* README.md */,
 				1A4A8F6D2827F97D006B1AE3 /* swiftui-cloudkit-core-data */,
 				1A4A8F6C2827F97D006B1AE3 /* Products */,
+				1A4A8F7E2827FA5E006B1AE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +69,17 @@
 		1A4A8F6D2827F97D006B1AE3 /* swiftui-cloudkit-core-data */ = {
 			isa = PBXGroup;
 			children = (
+				1A4A8F812827FB16006B1AE3 /* Info.plist */,
+				1A4A8F7D2827FA47006B1AE3 /* swiftui-cloudkit-core-data.entitlements */,
 				1A4A8F6E2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift */,
 				1A4A8F702827F97D006B1AE3 /* ContentView.swift */,
+				1A752262282806D90084139F /* AddSportView.swift */,
+				1A7522642828098A0084139F /* AddTeamView.swift */,
+				1A752260282806C10084139F /* TeamsView.swift */,
 				1A4A8F722827F97E006B1AE3 /* Assets.xcassets */,
 				1A4A8F742827F97E006B1AE3 /* Preview Content */,
+				1A4A8F822827FCAE006B1AE3 /* Model.swift */,
+				1A4A8F87282804C3006B1AE3 /* Model.xcdatamodeld */,
 			);
 			path = "swiftui-cloudkit-core-data";
 			sourceTree = "<group>";
@@ -65,6 +90,14 @@
 				1A4A8F752827F97E006B1AE3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A4A8F7E2827FA5E006B1AE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A4A8F7F2827FA5E006B1AE3 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4A8F832827FCAE006B1AE3 /* Model.swift in Sources */,
+				1A752263282806D90084139F /* AddSportView.swift in Sources */,
+				1A7522652828098A0084139F /* AddTeamView.swift in Sources */,
 				1A4A8F712827F97D006B1AE3 /* ContentView.swift in Sources */,
 				1A4A8F6F2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift in Sources */,
+				1A752261282806C10084139F /* TeamsView.swift in Sources */,
+				1A4A8F89282804C3006B1AE3 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,12 +302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-cloudkit-core-data/swiftui-cloudkit-core-data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-cloudkit-core-data/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BG3523GAZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-cloudkit-core-data/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -293,12 +333,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swiftui-cloudkit-core-data/swiftui-cloudkit-core-data.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swiftui-cloudkit-core-data/Preview Content\"";
 				DEVELOPMENT_TEAM = 4BG3523GAZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "swiftui-cloudkit-core-data/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A4A8F87282804C3006B1AE3 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A4A8F88282804C3006B1AE3 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1A4A8F88282804C3006B1AE3 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1A4A8F632827F97D006B1AE3 /* Project object */;
 }
