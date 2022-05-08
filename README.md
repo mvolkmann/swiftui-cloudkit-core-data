@@ -23,7 +23,11 @@
 1. Click the "Create" button.
    
 1. Create the file "Model.swift".
+   This uses NSPersistentCloudKitContainer to synchronized with iCloud.
+   TODO: Why isn't this working?
+   
 1. Modify the ".swift" file that defines the class that inherits from "App".
+
 1. Modify "ContentView.swift".
 
 1. Select top item in Navigator.
