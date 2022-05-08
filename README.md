@@ -20,7 +20,13 @@
 1. Select File ... New ... File...
 1. Under "Core Data", select "Data Model".
 1. Click the "Next" button.
-1. Click the "Create" button.
+1. Click the "Create" button which creates the file "Model.xcdatamodeld".
+1. Create entities.
+1. Create attributes.
+1. Create relationships.
+1. For each relationship, check the "Optional" checkbox in the Inspector panel.
+1. Select the "Default" configuration and check the
+   "Used with CloudKit" checkbox in the Inspector panel.
    
 1. Create the file "Model.swift".
    This uses NSPersistentCloudKitContainer to synchronized with iCloud.
