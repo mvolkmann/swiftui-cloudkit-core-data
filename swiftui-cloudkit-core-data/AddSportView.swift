@@ -15,9 +15,10 @@ struct AddSportView: View {
                     label: "Sport Name"
                 )
             }
+            .navigationTitle("Add Sport")
             .navigationBarItems(
                 leading: Button("Cancel", action: { dismiss() }),
-                trailing: Button("Save", action: save)
+                trailing: Button("Add", action: save)
             )
         }
     }

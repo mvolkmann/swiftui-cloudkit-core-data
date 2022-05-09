@@ -28,7 +28,7 @@ struct TeamsView: View {
                 Task { await deleteTeams(indexes: indexes) }
             }
         }
-        .navigationBarTitle(sport.name ?? "Unnamed Sport")
+        .navigationBarTitle((sport.name ?? "Unnamed") + " Teams")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Add Team") { openSheet = true }

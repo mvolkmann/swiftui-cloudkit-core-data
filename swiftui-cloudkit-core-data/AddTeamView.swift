@@ -16,9 +16,10 @@ struct AddTeamView: View {
                     label: "Team Name"
                 )
             }
+            .navigationTitle("Add Team")
             .navigationBarItems(
                 leading: Button("Cancel", action: { dismiss() }),
-                trailing: Button("Save", action: save)
+                trailing: Button("Add", action: save)
             )
         }
     }
