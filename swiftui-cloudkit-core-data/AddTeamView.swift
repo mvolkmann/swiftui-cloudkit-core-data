@@ -9,7 +9,7 @@ struct AddTeamView: View {
     
     var body: some View {
         Form {
-            MyTextField(label: "Team Name", placeholder: "name", text: $name)
+            MyTextField(text: $name, placeholder: "name", label: "Team Name")
             Button("Save") {
                 let text = name.trimmingCharacters(in: .whitespaces)
                 if text.isEmpty { return }
@@ -22,7 +22,6 @@ struct AddTeamView: View {
                 // Update Core Data.
                 do {
                     try dbContext.save()
-                    print("Saved team \(text)")
                 } catch {
                     print("Error saving team \(text)")
                 }

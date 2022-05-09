@@ -1,15 +1,14 @@
 import SwiftUI
 
+// Adds a delete button to a TextField and provides default styling.
 struct MyTextField: View {
-    var label: String?
-    var placeholder: String?
     @Binding var text: String
+    var placeholder: String?
+    var label: String?
     
     var body: some View {
         HStack {
-            if let label = label {
-                Text(label)
-            }
+            if let label = label { Text(label) }
             ZStack(alignment: .trailing) {
                 TextField(placeholder ?? "", text: $text)
                     .textFieldStyle(.roundedBorder)
