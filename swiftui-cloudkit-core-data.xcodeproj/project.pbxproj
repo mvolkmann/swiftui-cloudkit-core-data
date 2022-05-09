@@ -17,6 +17,7 @@
 		1A752261282806C10084139F /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752260282806C10084139F /* TeamsView.swift */; };
 		1A752263282806D90084139F /* AddSportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A752262282806D90084139F /* AddSportView.swift */; };
 		1A7522652828098A0084139F /* AddTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7522642828098A0084139F /* AddTeamView.swift */; };
+		1A82822A2829408A00380E9D /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8282292829408A00380E9D /* MyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		1A752260282806C10084139F /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
 		1A752262282806D90084139F /* AddSportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSportView.swift; sourceTree = "<group>"; };
 		1A7522642828098A0084139F /* AddTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTeamView.swift; sourceTree = "<group>"; };
+		1A8282292829408A00380E9D /* MyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1A4A8F6E2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift */,
 				1A4A8F702827F97D006B1AE3 /* SportsList.swift */,
 				1A752262282806D90084139F /* AddSportView.swift */,
+				1A8282292829408A00380E9D /* MyTextField.swift */,
 				1A7522642828098A0084139F /* AddTeamView.swift */,
 				1A752260282806C10084139F /* TeamsView.swift */,
 				1A4A8F722827F97E006B1AE3 /* Assets.xcassets */,
@@ -173,6 +176,7 @@
 				1A4A8F832827FCAE006B1AE3 /* Model.swift in Sources */,
 				1A752263282806D90084139F /* AddSportView.swift in Sources */,
 				1A7522652828098A0084139F /* AddTeamView.swift in Sources */,
+				1A82822A2829408A00380E9D /* MyTextField.swift in Sources */,
 				1A4A8F712827F97D006B1AE3 /* SportsList.swift in Sources */,
 				1A4A8F6F2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift in Sources */,
 				1A752261282806C10084139F /* TeamsView.swift in Sources */,

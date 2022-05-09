@@ -7,12 +7,8 @@ struct AddSportView: View {
     @State private var name = ""
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Sport Name")
-                TextField("name", text: $name)
-                    .textFieldStyle(.roundedBorder)
-            }
+        Form {
+            MyTextField(label: "Sport Name", placeholder: "name", text: $name)
             Button("Save") {
                 let text = name.trimmingCharacters(in: .whitespaces)
                 if text.isEmpty { return }
@@ -31,6 +27,5 @@ struct AddSportView: View {
                 dismiss()
             }
         }
-        .padding()
     }
 }

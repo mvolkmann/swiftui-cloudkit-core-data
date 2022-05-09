@@ -8,12 +8,8 @@ struct AddTeamView: View {
     let sport: Sport
     
     var body: some View {
-        VStack {
-            HStack {
-                Text("Team Name")
-                TextField("team name", text: $name)
-                    .textFieldStyle(.roundedBorder)
-            }
+        Form {
+            MyTextField(label: "Team Name", placeholder: "name", text: $name)
             Button("Save") {
                 let text = name.trimmingCharacters(in: .whitespaces)
                 if text.isEmpty { return }
