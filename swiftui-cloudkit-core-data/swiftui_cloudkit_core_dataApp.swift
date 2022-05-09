@@ -6,7 +6,7 @@ struct swiftui_cloudkit_core_dataApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environment(
+            SportsList().environment(
                 \.managedObjectContext,
                 model.container.viewContext
             )

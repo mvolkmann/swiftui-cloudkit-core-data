@@ -23,8 +23,9 @@ struct AddTeamView: View {
                 }
                 do {
                     try dbContext.save()
+                    print("Saved team \(text)")
                 } catch {
-                    print("Error saving team")
+                    print("Error saving team \(text)")
                 }
                 dismiss()
             }

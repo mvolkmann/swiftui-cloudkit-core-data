@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A4A8F6F2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F6E2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift */; };
-		1A4A8F712827F97D006B1AE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F702827F97D006B1AE3 /* ContentView.swift */; };
+		1A4A8F712827F97D006B1AE3 /* SportsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4A8F702827F97D006B1AE3 /* SportsList.swift */; };
 		1A4A8F732827F97E006B1AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A8F722827F97E006B1AE3 /* Assets.xcassets */; };
 		1A4A8F762827F97E006B1AE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4A8F752827F97E006B1AE3 /* Preview Assets.xcassets */; };
 		1A4A8F802827FA5E006B1AE3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4A8F7F2827FA5E006B1AE3 /* CloudKit.framework */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		1A4A8F6B2827F97D006B1AE3 /* swiftui-cloudkit-core-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-cloudkit-core-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4A8F6E2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_cloudkit_core_dataApp.swift; sourceTree = "<group>"; };
-		1A4A8F702827F97D006B1AE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A4A8F702827F97D006B1AE3 /* SportsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsList.swift; sourceTree = "<group>"; };
 		1A4A8F722827F97E006B1AE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4A8F752827F97E006B1AE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A4A8F7C2827F9AC006B1AE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 				1A4A8F812827FB16006B1AE3 /* Info.plist */,
 				1A4A8F7D2827FA47006B1AE3 /* swiftui-cloudkit-core-data.entitlements */,
 				1A4A8F6E2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift */,
-				1A4A8F702827F97D006B1AE3 /* ContentView.swift */,
+				1A4A8F702827F97D006B1AE3 /* SportsList.swift */,
 				1A752262282806D90084139F /* AddSportView.swift */,
 				1A7522642828098A0084139F /* AddTeamView.swift */,
 				1A752260282806C10084139F /* TeamsView.swift */,
@@ -173,7 +173,7 @@
 				1A4A8F832827FCAE006B1AE3 /* Model.swift in Sources */,
 				1A752263282806D90084139F /* AddSportView.swift in Sources */,
 				1A7522652828098A0084139F /* AddTeamView.swift in Sources */,
-				1A4A8F712827F97D006B1AE3 /* ContentView.swift in Sources */,
+				1A4A8F712827F97D006B1AE3 /* SportsList.swift in Sources */,
 				1A4A8F6F2827F97D006B1AE3 /* swiftui_cloudkit_core_dataApp.swift in Sources */,
 				1A752261282806C10084139F /* TeamsView.swift in Sources */,
 				1A4A8F89282804C3006B1AE3 /* Model.xcdatamodeld in Sources */,

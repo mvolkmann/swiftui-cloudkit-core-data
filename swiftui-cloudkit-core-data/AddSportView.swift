@@ -20,8 +20,9 @@ struct AddSportView: View {
                     sport.name = text
                     do {
                         try dbContext.save()
+                        print("Saved sport \(text)")
                     } catch {
-                        print("Error saving sport")
+                        print("Error saving sport \(text)")
                     }
                     dismiss()
                 }

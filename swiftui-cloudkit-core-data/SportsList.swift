@@ -1,7 +1,7 @@
 import CoreData
 import SwiftUI
 
-struct ContentView: View {
+struct SportsList: View {
     @Environment(\.managedObjectContext) var dbContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.name, order: .forward)])
     var sports: FetchedResults<Sport>
@@ -49,8 +49,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SportsList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SportsList()
     }
 }
