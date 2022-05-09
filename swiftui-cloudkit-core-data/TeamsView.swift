@@ -3,7 +3,9 @@ import SwiftUI
 
 struct TeamsView: View {
     @Environment(\.managedObjectContext) var dbContext
+    
     @FetchRequest(sortDescriptors: []) var teams: FetchedResults<Team>
+    
     @State private var openSheet = false
     
     let sport: Sport
@@ -23,9 +25,7 @@ struct TeamsView: View {
                 Text(team.name ?? "Unnamed Team")
             }
             .onDelete { indexes in
-                Task(priority: .high) {
-                    await deleteTeams(indexes: indexes)
-                }
+                Task { await deleteTeams(indexes: indexes) }
             }
         }
         .navigationBarTitle(sport.name ?? "Unnamed Sport")
@@ -52,13 +52,3 @@ struct TeamsView: View {
         }
     }
 }
-
-/*
- struct TeamsView_Previews: PreviewProvider {
- static var previews: some View {
- let sport = Sport()
- sport.name = "Hockey"
- TeamsView(sport: sport)
- }
- }
- */

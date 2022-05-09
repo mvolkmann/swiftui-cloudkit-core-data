@@ -32,11 +32,3 @@ struct AddTeamView: View {
         }
     }
 }
-
-/*
-struct AddTeamView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddTeamView()
-    }
-}
-*/

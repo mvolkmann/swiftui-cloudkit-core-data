@@ -1,10 +1,14 @@
 import CoreData
 import SwiftUI
 
+// This displays a list of sports.
+// Tapping one navigates to a list of teams in that sport.
 struct SportsList: View {
     @Environment(\.managedObjectContext) var dbContext
+    
     @FetchRequest(sortDescriptors: [SortDescriptor(\.name, order: .forward)])
-    var sports: FetchedResults<Sport>
+        var sports: FetchedResults<Sport>
+    
     @State private var openSheet = false
     
     var body: some View {
@@ -16,17 +20,13 @@ struct SportsList: View {
                     }
                 }
                 .onDelete { indexes in
-                    Task(priority: .high) {
-                        await deleteSports(indexes: indexes)
-                    }
+                    Task { await deleteSports(indexes: indexes) }
                 }
             }
             .navigationBarTitle("Sports")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Add Sport") {
-                        openSheet = true
-                    }
+                    Button("Add Sport") { openSheet = true }
                 }
             }
             .sheet(isPresented: $openSheet) {
@@ -46,11 +46,5 @@ struct SportsList: View {
                 print("Error deleting sport")
             }
         }
-    }
-}
-
-struct SportsList_Previews: PreviewProvider {
-    static var previews: some View {
-        SportsList()
     }
 }

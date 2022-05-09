@@ -31,9 +31,3 @@ struct AddSportView: View {
         .padding()
     }
 }
-
-struct AddSportView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddSportView()
-    }
-}
