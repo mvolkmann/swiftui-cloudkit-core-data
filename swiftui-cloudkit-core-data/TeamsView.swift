@@ -40,6 +40,7 @@ struct TeamsView: View {
     }
     
     func deleteTeams(indexes: IndexSet) async {
+        // There will only be one index in the IndexSet.
         await dbContext.perform {
             for index in indexes {
                 dbContext.delete(teams[index])

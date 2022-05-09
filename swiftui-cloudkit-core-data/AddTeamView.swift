@@ -16,11 +16,14 @@ struct AddTeamView: View {
             }
             Button("Save") {
                 let text = name.trimmingCharacters(in: .whitespaces)
-                if !text.isEmpty {
-                    let team = Team(context: dbContext)
-                    team.name = text
-                    team.sport = sport
-                }
+                if text.isEmpty { return }
+                
+                // Create an empty Team object.
+                let team = Team(context: dbContext)
+                // Set the attributes.
+                team.name = text
+                team.sport = sport
+                // Update Core Data.
                 do {
                     try dbContext.save()
                     print("Saved team \(text)")

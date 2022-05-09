@@ -15,17 +15,20 @@ struct AddSportView: View {
             }
             Button("Save") {
                 let text = name.trimmingCharacters(in: .whitespaces)
-                if !text.isEmpty {
-                    let sport = Sport(context: dbContext)
-                    sport.name = text
-                    do {
-                        try dbContext.save()
-                        print("Saved sport \(text)")
-                    } catch {
-                        print("Error saving sport \(text)")
-                    }
-                    dismiss()
+                if text.isEmpty { return }
+                
+                // Create an empty Sport object.
+                let sport = Sport(context: dbContext)
+                // Set the attributes.
+                sport.name = text
+                // Update Core Data.
+                do {
+                    try dbContext.save()
+                    print("Saved sport \(text)")
+                } catch {
+                    print("Error saving sport \(text)")
                 }
+                dismiss()
             }
         }
         .padding()
